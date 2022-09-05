@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import {
   Document,
-  Image,
   Page,
   PDFDownloadLink,
   PDFViewer,
@@ -16,7 +14,7 @@ function App() {
     <div className="App">
       <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
         {({ blob, url, loading, error }) =>
-          loading ? "Loading document..." : "Download now!"
+          loading ? "Loading document..." : "Download now...!"
         }
       </PDFDownloadLink>
       <PDFViewer>
